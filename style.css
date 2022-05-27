@@ -1,0 +1,288 @@
+/* Box Model Hack */
+* {
+    box-sizing: border-box;
+  }
+  
+  /* Clear fix hack */
+  .clearfix:after {
+       content: ".";
+       display: block;
+       clear: both;
+       visibility: hidden;
+       line-height: 0;
+       height: 0;
+  }
+  
+  .clear {
+      clear: both;
+  }
+  
+/******************************************
+/* BASE STYLES
+/*******************************************/
+  
+body {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 1.17rem;
+    line-height: 1.6;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p {
+    margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-weight: 900;
+    font-size: 2rem;
+}
+
+p {
+    color: rgb(12, 26, 35);
+}
+
+header a,
+.section1 div *,
+.section2 div *,
+.section4 div p,
+.section8 div span,
+.section8 div  p {
+    color: #FFF;
+}
+
+.section2 h3,
+.section4 h3,
+.section8 h3 {
+    color: rgb(0, 255, 10);
+}
+
+.section3 h3,
+.section5 h3,
+.section6 h3,
+.section7 h3,
+.section4 > a,
+.section8 a,
+.button3 {
+    color: rgb(13, 22, 27);
+}
+
+header,
+.section3,
+.section5,
+.section6,
+.section7 {
+    background: #fff;
+}
+
+main,
+.section2,
+.section4,
+.section8,
+.section9 {
+    background: rgb(12, 26, 35);
+}
+
+.section1{
+    background: rgb(13, 22, 27);
+}
+
+.button1 {
+    font-size: 0.78rem;
+    text-decoration: none;
+}
+
+.button2,
+.section8 div span {
+    font-size: 1.1rem;
+    text-decoration: none;
+}
+
+.button3,
+.button4 {
+    font-size: 0.9rem;
+    text-decoration: none;
+}
+
+.section4 *,
+.section8 * {
+    text-align: center;
+}
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+.container {
+    margin-inline: auto;
+    width: min(90%, 70.5rem);
+}
+
+header {
+    padding-top: 1.4rem;
+}
+
+section {
+    padding: 3rem 13rem;
+}
+
+header img {
+    margin-left: 8%;
+}
+
+.button1 {
+    margin-right: 8.3%;
+    float: right;
+}
+
+main img {
+    margin-top: 9%;
+    margin-left: 5.2%;
+    padding-bottom: 5%;
+}
+
+.button2 {
+    float: left;
+    margin-top: 3%;
+}
+
+.section1{
+    height: 400px;
+}
+
+.section1 p{
+    width: 120%;
+    margin-bottom: -1%;
+}
+
+
+.p1 {
+    margin-top: 1%;
+    margin-bottom: -1.5%;
+}
+
+div .caja1 {
+    width: 50%;
+    float: left;
+}
+
+div .caja2 {
+    width: 50%;
+    float: right;
+    padding-right: 0%
+}
+
+.section3a,
+.section5a {
+    padding: 0rem;
+    margin: 10% -60%;
+}
+
+.section3b,
+.section5b {
+    padding: 0rem;
+    margin: 15% -10%;
+    padding-left: 5%;
+}
+
+.section3b * {
+    width: 120%;
+    margin: 7% 0;
+}
+
+.section4 {
+    height: 350px;
+}
+
+.section4,
+.section6 {
+    clear: both;
+}
+
+.button3 {
+    float: left;
+    margin-left: 40%;
+    margin-top: 7%;
+}
+
+.section5 {
+    height: 500px;
+}
+
+.section5b p,
+.section6 p,
+.section7 p {
+    margin-top: 3%;
+    width: 110%;
+}
+
+.section7 p + p {
+    width: 100%;
+}
+
+.section8 {
+    margin-top: 5%;
+}
+
+.section8 p {
+    margin-top: 3%;
+}
+
+.button4 {
+    float: left;
+    margin-left: 43%;
+    margin-top: 3%;
+}
+
+.section9 {
+    padding-left: 10%;
+    padding-top: 5%;
+}
+
+.imgbottom {
+    margin-top: 10%;
+    margin-left: -2%;
+    
+}
+
+img {
+    display: inline-block;
+    max-width: 100%;
+}
+
+
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+.button1,
+.button2 {
+    border: 0.3rem solid rgb(46, 147, 46);
+    padding: 0.4rem 0.7rem;
+    border-radius: 10%;
+    background: rgb(46, 147, 46);
+}
+
+.button2 {
+    border-radius: 8%;
+    padding: 0.8rem 0.7rem;
+}
+
+.button3,
+.button4 {
+    border: 0.3rem solid rgb(0, 255, 10);
+    padding: 0.7rem 0.7rem;
+    border-radius: 5%;
+    background: rgb(0, 255, 10);
+}
+
+.button4 {
+    padding: 0.7rem 1.3rem;
+}
